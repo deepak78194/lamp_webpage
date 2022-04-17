@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #6495ED;
+    --secondary-color: #6a0dad;
+}
+
+body {
+    min-height: 100vh;
+}
+.hero {
+    background: var(--primary-color);
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav .menu-img {
+    width: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .logo {
+    width: 160px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+nav .logo span {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    background: #efefef;
+    height: 20px;
+    width: 50px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+
+}
+
+button span {
+    display: block;
+    background: #999;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+
+.lamp-container { 
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 150px; 
+}
+
+.lamp {
+    width: 100%;
+}
+
+#icon {
+    width: 20px;
+    cursor: pointer;
+}
+
+.light {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 580px;
+    margin-left: -8px;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.text-container {
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text-container h1 {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.text-container a {
+    text-decoration: none;
+    background:  var(--secondary-color);
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 35px;
+    border-radius: 30px;
+}
+
+.active {
+    background: #00986f;
+}
+
+.active span {
+    background: #fff;
+    margin-left: 31px;
+}
+
+.on {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.dark-theme {
+
+    --primary-color: #1d2026;
+    --secondary-color: #00986f;
+
+}
